@@ -8,7 +8,7 @@ import tempfile
 # making writable using claude-desktop
 TEMP_DIR=tempfile.gettempdir()
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "expenses.db")
+DB_PATH = os.path.join(TEMP_DIR, "expenses.db")
 CATEGORIES_PATH = os.path.join(os.path.dirname(__file__), "categories.json")
 
 mcp = FastMCP(name="ExpenseTracker")
